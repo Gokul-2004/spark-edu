@@ -3,15 +3,17 @@ import { getAuth } from 'firebase/auth';
 
 import { getFirestore } from 'firebase/firestore';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAGlevfKz-r8OC2Xqfs9hE9HqE8C7HMAC4",
-  authDomain: "sparklyt-9afad.firebaseapp.com",
-  projectId: "sparklyt-9afad",
-  storageBucket: "sparklyt-9afad.firebasestorage.app",
-  messagingSenderId: "306112418471",
-  appId: "1:306112418471:web:702ff5057c09c123108182",
-  measurementId: "G-VWFHK9W3KB"
+mentId: "G-VWFHK9W3KB"
 };
+
+
+REACT_APP_FIREBASE_API_KEY="your-api-key"
+REACT_APP_FIREBASE_AUTH_DOMAIN="your-auth-domain"
+REACT_APP_FIREBASE_PROJECT_ID="your-project-id"
+REACT_APP_FIREBASE_STORAGE_BUCKET="your-storage-bucket"
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID="your-messaging-sender-id"
+REACT_APP_FIREBASE_APP_ID="your-app-id"
+REACT_APP_FIREBASE_MEASUREMENT_ID="your-measurement-id"
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
